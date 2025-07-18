@@ -16,29 +16,27 @@
         }
         main{
             width: 100%;
-            padding: 15pt;
-            font-size: 10pt;
-            line-height: 1.1;
-            margin-bottom: 20pt;
+            padding: 20pt;
+            font-size: 12pt;
+            line-height: 1.2;
+            margin-bottom: 40pt;
         }
         p {
-            font-size: 11pt;
+            font-size: 13.5pt;
             margin: 0;
         }
         .title-main {
-            font-size: 15pt;
-            text-align: center;
-            font-weight: bold;
-        }
-        .title-sub {
-            font-size: 12pt;
+            font-size: 19.5pt;
             text-align: center;
             padding-top: 3pt;
-            font-weight: bold;
+        }
+        .title-sub {
+            font-size: 14pt;
+            text-align: center;
+            padding-top: 3pt;
         }
         .small-text {
-            font-size: 8pt;
-            line-height: 1.0;
+            font-size: 9pt;
         }
         .employee-info {
             padding-left: 8pt;
@@ -47,6 +45,7 @@
         }
         .pin-info {
             padding-top: 10pt;
+            padding-left: 151pt;
             line-height: 120%;
             text-align: left;
         }
@@ -75,14 +74,14 @@
         .no-border {
             border: none;
         }
-        @page {
-            size: A4 landscape;
-            margin: 15mm;
-        }
         @media print {
             body {
                 margin: 0;
                 padding: 0;
+            }
+            @page {
+                size: A4;
+                margin: 20mm;
             }
             table {
                 page-break-inside: auto;
@@ -144,7 +143,7 @@
                     <p class="small-text">Kshs.</p>
                 </td>
                 <td style="width: 58pt;">
-                    <p class="small-text">Retirement Contribution &amp; Owner Occupied Interest</p>
+                    <p class="small-text">Retirement Contribution & Owner Occupied Interest</p>
                 </td>
                 <td style="width: 61pt;">
                     <p class="small-text">Chargeable Pay</p>
@@ -426,17 +425,9 @@
             </tr>
         </table>
         <p style="text-indent: 0pt; text-align: left;"><br/></p>
-        <table style="border: none;">
-            <tr>
-                <td style="width: 50%; border: none;">
-                    <p class="small-text footer-text">To be completed by Employer at end of year</p>
-                    <p class="small-text footer-text">TOTAL CHARGEABLE PAY (COL H) Kshs. 1,438,200.00</p>
-                </td>
-                <td style="width: 50%; border: none;">
-                    <p class="small-text footer-text">TOTAL TAX (COL L) Kshs. 363,364.00</p>
-                </td>
-            </tr>
-        </table>
+        <p class="small-text footer-text">To be completed by Employer at end of year</p>
+        <p class="small-text footer-text">TOTAL CHARGEABLE PAY (COL H) Kshs. 1,438,200.00</p>
+        <p class="small-text footer-text">TOTAL TAX (COL L) Kshs. 363,364.00</p>
     </main>
 </body>
 </html>
